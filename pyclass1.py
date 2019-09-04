@@ -1,0 +1,21 @@
+class Person:
+	def __init__(self,name,age):
+		self.name = name
+		self.age = age
+
+p1 = Person("suppandi",14)
+p2 = Person("Ramu",12)
+
+print("name #1 is",p1.name)
+print("age #1 is",p1.age)
+
+print("name #2 is",p2.name)
+print("age #2 is",p2.age)
+
+p2.age = 10
+
+print("\n Modified age of Person #2 is",p2.age)
+
+print("deleting p1")
+del p1.name
+print("\nname of person #1 is",p1.name)
