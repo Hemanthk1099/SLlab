@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function bill(){
+                var total =0 ;
+                var i = 1;
+                prices = [15,20,35];
+                items = ['Veg Puff',"Roll","Cake"];
+                var bill = document.getElementById("name").value + "<br>";
+                for( i = 1 ;i<=3 ;i++)
+                {
+                    c = document.getElementById(i.toString()).value;
+                    x = c*prices[i-1];
+                    bill += items[i-1]+ " quantity: "+c+" cost : "+x.toString()+"<br>";
+                    total +=x;
+                }
+                bill += "<br>Total cost : "+total;
+                document.getElementById("bill").innerHTML = bill;
+            }
+
+        </script>
+    </head>
+    <body>
+        <p > WELCOME!</p>
+        Enter your name : <input id ="name">
+        <p id = "menu">
+            <h4>MENU</h4>
+            Veg Puff cost/peice 15: <input id = "1" type="number" placeholder="0">
+            Roll cost/peice 20: <input id = "2" type="number" placeholder="0">
+            Cake cost/peice 35: <input id = "3" type="number" placeholder="0">
+            <button onclick="bill()">Okay</button>
+        </p>
+    <p id ="bill"></p>
+    </body>
+</html>

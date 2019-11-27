@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            items =[]
+            function display(){
+                x = "";
+                for (i in items){
+                    //document.getElementById("disp").appendChild(para);
+                    x+= "<p id = \"p"+i+"\" onmouseover = details("+i+") >"+items[i].name+"</p>";
+                }
+                document.getElementById("disp").innerHTML = x;
+            }
+            function submit(){
+                name = document.getElementById("name").value;
+                year = document.getElementById("year").value;
+                price = document.getElementById("price").value;
+                items.push(
+                    {
+                        "name":name,
+                        "year" : year,
+                        "price" : price
+                    }
+                )
+            }
+            function details(i)
+            {
+                ide = "p"+i;
+                document.getElementById(ide).innerHTML=
+                   "name : " +  items[i].name +
+                   "<br>year : " + items[i].year + 
+                   "<br>price :" + items[i].price;
+            }
+        </script>
+    </head>
+    <body>
+    name: <input type="text" id = "name">
+    year: <input type="number" id  = "year">
+    price : <input type = "number" id = "price">
+    <button id = "submit" onClick = "submit()">
+        Submit
+    </button>
+    <button id = "Display" onClick = "display()">
+        Display
+        </button>
+        <div id = "disp"></div>
+    </body>
+</html>

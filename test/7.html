@@ -1,0 +1,31 @@
+<html>
+    <head>
+    <script type="text/javascript">
+        function check()
+        {
+            var val = document.getElementById("num").value;
+            var res = document.getElementById("result");
+            var result = "";
+            if(typeof(val) == Number)
+            {
+            if(val%3 == 0)
+            {
+                result = "Yes";
+            }
+            else
+                result = "The number is not divisible by 3";
+            res.innerHTML = result;
+            }
+            else
+            {
+                res.innerHTML = "invalid input";
+            }
+        }
+    </script>
+    </head>
+    <body>
+        Enter a number : <input type="number" id = "num">
+        <button onClick="check()"> check </button>
+        <p id = "result"> hey </p>
+    </body>
+</html>

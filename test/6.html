@@ -1,0 +1,27 @@
+
+<html>
+    <head>
+        <script type="text/javascript">
+            function getLongest(){
+                val = document.getElementById("txt").value;
+                words =[];
+                words = val.split(" ");
+                var longest = 0;
+                var res = "";
+                for(word in words){
+                    //console.log(word)
+                    if(words[word].length>longest){
+                        longest = words[word].length;
+                        res = words[word];
+                    }
+                }
+                document.getElementById("result").innerHTML = res+" length = "+longest;
+            }
+        </script>
+    </head>
+    <body>
+       Sentence: <input type="text" id ="txt">
+       <button id = "check" onclick="getLongest()">Get the longest word</button>
+       <p id = "result">unknown</p>
+    </body>
+</html>

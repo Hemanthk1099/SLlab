@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+         hosDetails = {
+                    name : "Ramaiah",
+                    location :"msr nagar"
+                }
+            function begin() {
+                document.getElementById("hospital").innerHTML = hosDetails.name + "<br>"+hosDetails.location+"<br>";
+            }
+            function display()
+            {
+                //document.getElementById("patient").style.color = "red";
+                patients=[ {
+                    name:"jack",
+                    adharNo:"4562 4582 5877",
+                    tests : [
+                        "blood test",
+                        "urine test"
+                    ]
+                },
+                {
+                    name:"nichole",
+                    adharNo:"4562 4582 7889",
+                    tests : [
+                        "fever test",
+                        "urine test"
+                    ]
+                }
+            ]
+            x = ""
+            for (i in patients){
+                x +="name  : "+patients[i].name+"<br>"+"aadhar number : "+patients[i].adharNo+"<br>tests"+patients[i].tests;
+                x+="<br><br>"
+            }
+                document.getElementById("patient").innerHTML = x;
+                //document.getElementById("tests").innerHTML = ;
+            }
+            function change(){
+                document.getElementById("hospital").style.color = "red";
+            }
+        </script>
+    </head>
+    <body onload="begin()">
+        <p id = "hospital">hey</p>
+        <p id = "patient" onmouseover="display()" onmouseout="change()">Display patient details</p>
+        <!----<button onClick="display()">
+            Display
+        </button>-->
+    </body>
+</html>
