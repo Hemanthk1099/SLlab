@@ -10,21 +10,6 @@
 ## Submitted to Dr. Mydhili K Nair (Faculty Coordinator)
 
 ## List of programs 
-
-#### python-basics
-
-1. (Dictionaries_for_if.py) Illustration of dictionary data type, for and if statements.
-2. (registerdictionary.py) Create  a dictionary 'Register' that holds the names and details
-of students in a class. Print the roll numbers of the students.
-3. (tuples_lists.py) Create a list and perform the following operations on it.
-  a.)find its length
-  b.)add this list into another list
-  c.)use the slice operation to print every second element in the list
-  d.)replace the second element in the list
-  e.)concatenate with another list
-  f.)clone this list
-  g.)split the list evenly.
-  Create a tuple and print the second element in it. Convert this tuple to a list
   
 #### python-classes-functions
 
