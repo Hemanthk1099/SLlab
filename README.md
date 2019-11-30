@@ -11,7 +11,7 @@
 
 ## List of programs 
   
-#### python-classes-functions
+#### 2-python-classes-functions
 
 4. (Atomic.py & elementsdictionary.py)  (i)Create a dictionary that contains the atomic element symbol and its name.
 (ii)Add a unique & duplicate element into this dictionary by interacting with the user.
@@ -68,8 +68,9 @@ Test Cases: The string will not be empty and will have at least one letter.
 E.g: Input: "+d+=3=+s+" Output: true
 E.g. Input: "f++d+"  Output: false
 17. (oddrange.html) The function OddRange(num1, num2) takes two integers and needs to return an array
-of the odd numbers between the given integers.
-
-#### js-jsonobjects
-
+of the odd numbers between the given integers
 18.Create a patient
+#### datascience
+1.Black friday
+2. Working with Iris Dataset
+3. Student performance
